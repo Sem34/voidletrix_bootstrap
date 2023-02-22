@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* fonts */
+@font-face {
+    font-family: 'Rockwell Extra Bold';
+    src: url(/fonts/rockwell-extra-bold/rockeb.ttf);
+}
+@font-face {
+    font-family: 'Verdana Font';
+    src: url(/fonts/Verdana-Font/Verdana.ttf);
+}
+
+/* main colors */
+:root{ 
+    --white: #fefefe;
+    --gray: #b4b2b3;
+    --bg-color: #323232;
+    --text-color: #248a7d;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+/* block-1 */
+header{
+    font-size: 14px;
+}
+.nav__social img:hover{
+    transition: 1s;
+    scale: 1.2;
+}
+.nav__line{
+    background-color: var(--white);
+    width: 2px;
+    height: 20px;
+    margin: 10px 10px;
+}
+
+/* about */
+.about h1{
+        font-size: 91px;
+        font-family: "Rockwell Extra Bold";
+        color: var(--text-color);
+        font-weight: bold;
+        padding: 30px 0;
+
+}
+.about__text{
+    padding: 10px 50px;
+    font-family: "Verdana Font";
+}
+.about__text h3 {
+    color: var(--gray);
+    padding: 20px 0;
+}
+.about__text p {
+    color: var(--gray);
+    font-family: "Verdana Font";
+    font-size: 18px;
+    padding-left: 35px;
+}
+.title__programms h3{
+    font-family: "Verdana Font";
+    font-size: 21px;
+    padding: 20px 0;
+}
+/* works */
+.works__title h2{
+    font-size: 91px;
+    font-family: "Rockwell Extra Bold";
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 30px 0;
+}
+.works__buttons{
+    padding: 30px 0;
+}
+.works__btn a {
+        font-size: 38px;
+        font-family: "Verdana";
+        color: var(--gray);
+        font-weight: bold;
+        text-decoration: none;
+}
+
+.works__btn_active {
+    font-size: 38px;
+    font-family: "Verdana";
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.works__btn_active a{
+    font-size: 38px;
+    font-family: "Verdana";
+    color: var(--text-color);
+    font-weight: bold;
+    text-shadow: 0 0 1px #fff, 0 0 10px #000, 0 0 15px #000, 0 0 20px #248a7d, 0 0 30px #248a7d, 0 0 40px #248a7d, 0 0 55px #248a7d, 0 0 75px #248a86, 2px 5px 0px rgb(36 138 125 / 25%);
+}
+/* slider  */
+.itc-slider__item {
+    flex: 0 0 0;
+    max-width: 33.3333333333%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255, 0.8);
+    font-size: 7rem;
+  }
+  .itc-slider__item img{
+    height: 350px;
+  }
+  
+  /* design */
+.design{
+    display: none;
+}
+.design .itc-slider__item{
+    flex: 0 0 100%;
+    max-width: 33.3333333333%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255, 0.8);
+    font-size: 7rem;
+}
+.design video{
+  max-width: 350px;
+}
+/* .design__show {
+    display: block;
+} */
+/* animation */
+.animation{
+    display: none;
+}
+.animation .itc-slider__item{
+    flex: 0 0 33%;
+    max-width: 33.3333333333%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255, 0.8);
+    font-size: 7rem;
+}
+.animation video{
+  max-width: 350px;
+}
+/* contact */
+.contact__title h3{
+    font-size: 91px;
+    font-family: "Rockwell Extra Bold";
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 100px 0;
+}
+/* footer */
+.footer{
+    padding: 100px 0;
+    color: var(--gray);
+    background-color: var(--white);
+}
+.footer__email a{
+    color: var(--gray);
+    text-decoration: none;
+}
+.footer__email a:hover{
+    transition: 1s;
+    color: var(--text-color);
+}
+.footer__social img{
+    max-width: 65px;
+    margin: 20px 20px;
+}
+.footer__social img:hover {
+    scale: 1.2;
+    transition: 1s;
+    -webkit-box-shadow: 0px -1px 15px 10px #248a7d; 
+box-shadow: 0px -1px 15px 10px #248a7d;
+}
