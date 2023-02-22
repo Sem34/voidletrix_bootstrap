@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* fonts */
+@font-face {
+    font-family: 'Rockwell Extra Bold';
+    src: url(/fonts/rockwell-extra-bold/rockeb.ttf);
+}
+@font-face {
+    font-family: 'Verdana Font';
+    src: url(/fonts/Verdana-Font/Verdana.ttf);
+}
+
+/* main colors */
+:root{ 
+    --white: #fefefe;
+    --gray: #b4b2b3;
+    --bg-color: #323232;
+    --text-color: #248a7d;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+/* block-1 */
+header{
+    font-size: 14px;
+}
+.nav__social img:hover{
+    scale: 1.2;
+}
+.nav__line{
+    background-color: var(--white);
+    width: 2px;
+}
+
+/* about */
+.about h1{
+        font-size: 91px;
+        font-family: "Rockwell Extra Bold";
+        color: var(--text-color);
+        font-weight: bold;
+        padding: 30px 0;
+
+}
+.about__text{
+    padding: 10px 50px;
+    font-family: "Verdana Font";
+}
+.about__text h3 {
+    color: var(--gray);
+    padding: 20px 0;
+}
+.about__text p {
+    color: var(--gray);
+    font-family: "Verdana Font";
+    font-size: 18px;
+}
+.title__programms h3{
+    font-family: "Verdana Font";
+    font-size: 21px;
+}
+/* works */
+.works__title h2{
+    font-size: 91px;
+    font-family: "Rockwell Extra Bold";
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 30px 0;
+}
+.works__buttons{
+    padding: 30px 0;
+}
+.works__btn a {
+        font-size: 38px;
+        font-family: "Verdana";
+        color: var(--gray);
+        font-weight: bold;
+        text-decoration: none;
+}
+
+.works__btn_active {
+    font-size: 38px;
+    font-family: "Verdana";
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.works__btn_active a{
+    font-size: 38px;
+    font-family: "Verdana";
+    color: var(--text-color);
+    font-weight: bold;
+    text-shadow: 0 0 1px #fff, 0 0 10px #000, 0 0 15px #000, 0 0 20px #248a7d, 0 0 30px #248a7d, 0 0 40px #248a7d, 0 0 55px #248a7d, 0 0 75px #248a86, 2px 5px 0px rgb(36 138 125 / 25%);
+}
+.works__card{
+    width: 255px;
+    background: none;
+    color: var(--white);
+}
+/* slider  */
+.slider{ 
+    width: 100%;
+    position: relative;
+    border: 4px solid var(--text-color);
+    margin: 100px auto;
+}
+.line{
+    position: relative;
+    height: 250px;
+    /* overflow: hidden; */
+    left: 0;
+    transition: all ease 1s;
+}
+.slide{
+    float: left;
+}
+.slide img{
+    max-width: 200px;
+}
+.clear{
+    clear: both;
+}
+/* contact */
+.contact__title h3{
+    font-size: 91px;
+    font-family: "Rockwell Extra Bold";
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 100px 0;
+}
+/* footer */
+.footer{
+    padding: 100px 0;
+    color: var(--gray);
+    background-color: var(--white);
+}
+.footer__email a{
+    color: var(--gray);
+    text-decoration: none;
+}
+.footer__social img{
+    max-width: 65px;
+    margin: 20px 20px;
+}
+.footer__social img:hover {
+    scale: 1.2;
+    -webkit-box-shadow: 0px -1px 15px 10px #248a7d; 
+box-shadow: 0px -1px 15px 10px #248a7d;
+}
